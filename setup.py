@@ -11,10 +11,10 @@ setuptools.setup(
     description="ACPOA plugin creation helper",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
-    # project_urls={
-    #     "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
-    # },
+    url="https://github.com/Leikt/acpoa-plugin",
+    project_urls={
+        "Bug Tracker": "https://github.com/Leikt/acpoa-plugin/issues",
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -23,5 +23,6 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.9",
-    package_data={'': ['default/*']}
+    package_data={'acpoa-plugin': ['default/*', 'default/src/plugin_name/*']},
+    install_requires=['build']
 )

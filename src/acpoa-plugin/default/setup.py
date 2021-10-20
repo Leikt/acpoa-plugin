@@ -3,18 +3,19 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+# Line automatically modified by acpoa-builder
+# Do not modify it manually unless you know what you are doing
+files = ["cfg/*", "data/*"]
+
 setuptools.setup(
-    name="sample_string",
-    version="0.0.1",
-    author="Example Author",
-    author_email="author@example.com",
-    description="A small example package",
+    name="____name____",
+    version="____version____",
+    author="____author____",
+    author_email="____author_email____",
+    description="____description____",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
-    # project_urls={
-    #     "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
-    # },
+    url="____url____",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -23,5 +24,5 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.9",
-    package_data={'': ['data/*', 'cfg/*']}
+    package_data={'': files}
 )

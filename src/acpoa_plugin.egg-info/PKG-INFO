@@ -1,3 +1,19 @@
+Metadata-Version: 2.1
+Name: acpoa-plugin
+Version: 0.0.1
+Summary: ACPOA plugin creation helper
+Home-page: https://github.com/pypa/sampleproject
+Author: Leikt
+Author-email: leikt.solreihin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # ACPOA Builder
 ## What is ACPOA
 ACPOA is the acronym for "Application Core for Plugin Oriented Applications". It's a tool to create flexible and extendable application.
@@ -38,3 +54,5 @@ If, like me, you are lazy, you can use the package *acpoa-plugin* to automatical
     - `-a | --author 'NAME'` specifies the name of the author (you)
     - `-e | --author-email 'EMAIL'` specifies the author's email (yours)
     - `-f | --force` delete the existing directory if it exists then create a new one
+
+
