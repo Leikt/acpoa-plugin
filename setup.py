@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="acpoa-plugin",
-    version="1.0.0",
+    version="1.0.1",
     author="Leikt",
     author_email="leikt.solreihin@gmail.com",
     description="ACPOA plugin creation helper",

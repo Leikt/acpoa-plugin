@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 # Line automatically modified by acpoa-builder
 # Do not modify it manually unless you know what you are doing
-files = ["cfg/*", "data/*"]
+files = []
 
 setuptools.setup(
     name="____name____",
