@@ -25,7 +25,7 @@ Every project has a structure, ACPOA make no exception. Here is the base structu
 ```
 ### New plugin assistance
 If, like me, you are lazy, you can use the package *acpoa-plugin* to automatically create new plugin directory.
-- Install the package : `python3 -m install acpoa-plugin`
+- Install the package : `python3 -m pip install acpoa-plugin`
 - Type `python3 -m acpoa-plugin --help` to see what you can do with the module.
 
 To create a new plugin directory at the root of an empty project : just use
