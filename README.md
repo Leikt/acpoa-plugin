@@ -1,4 +1,4 @@
-# ACPOA Builder
+# ACPOA Plugin
 ## What is ACPOA
 ACPOA is the acronym for "Application Core for Plugin Oriented Applications". It's a tool to create flexible and extendable application.
 It pronounces "ak poa".
@@ -26,15 +26,16 @@ Every project has a structure, ACPOA make no exception. Here is the base structu
 ### New plugin assistance
 If, like me, you are lazy, you can use the package *acpoa-plugin* to automatically create new plugin directory.
 - Install the package : `python3 -m install acpoa-plugin`
-- Create a new plugin directory with `python3 -m install acpoa-plugin new NAME [PATH] [OPTIONS] `. Where:
-  - **NAME** is the name of the plugin
-  - **PATH** is the directory where to create plugin.
-  - Optional parameters:
-    - `-p | --pretty-name "NAME"` specifies the pretty name of the plugin (default is the same as name)
-    - `-l | --license FILE` specifies the license by filename (default LICENSE)
-    - `-u | --url URL` specifies the main url of the project (default empty)
-    - `-d | --description "TEXT"` specifies the short description of the project (default empty)
-    - `-v | --version VALUE` specifies the plugin version (default 0.0.1)
-    - `-a | --author 'NAME'` specifies the name of the author (you)
-    - `-e | --author-email 'EMAIL'` specifies the author's email (yours)
-    - `-f | --force` delete the existing directory if it exists then create a new one
+- Type `python3 -m acpoa-plugin --help` to see what you can do with the module.
+
+To create a new plugin directory at the root of an empty project : just use
+
+`python3 -m acpoa-plugin new YOUR_PLUGIN_NAME`
+
+Where YOUR_PLUGIN_NAME is the name of the plugin, the package you will edit later.
+### Build the plugin
+It is as easy that create a new plugin directory. Just type the command :
+
+`python3 -m acpoa-plugin build -d`
+
+The `-d` option is useful if you have data inside your plugin package, it compile all data inside the package with it.

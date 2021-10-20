@@ -15,7 +15,6 @@ parser_new = subparsers.add_parser('new', description="Create a new plugin direc
 parser_new.add_argument('name', type=hyphenated, help="Name of the plugin (python package name)")
 parser_new.add_argument('path', nargs='?', default=os.getcwd(), help="Path where to create the plugin directory")
 parser_new.add_argument('-p', '--pretty-name', help="Set the plugin's pretty name.")
-parser_new.add_argument('-l', '--license', help="Path to the license file to copy.")
 parser_new.add_argument('-u', '--url', help="Main plugin URL")
 parser_new.add_argument('-d', '--description', help="Short description of the plugin")
 parser_new.add_argument('-v', '--version', default="0.0.1", help="Version of the plugin")
